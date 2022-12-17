@@ -1,5 +1,30 @@
-public class WarmBlooded {
+public class WarmBlooded extends Animal{
 
+
+    static boolean hasStableTemp=true;
+    private String fat;
+
+    public WarmBlooded(String name,  String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim) {
+        super(name, "WormBlooded", animalClass, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim);
+    }
+
+    public static boolean isHasStableTemp() {
+        return hasStableTemp;
+    }
+
+    public static void setHasStableTemp(boolean hasStableTemp) {
+        WarmBlooded.hasStableTemp = hasStableTemp;
+    }
+
+    public String getFat() {
+        return fat;
+    }
+
+
+
+    public void setFat(String fat) {
+        this.fat = fat;
+    }
 
 
 }
