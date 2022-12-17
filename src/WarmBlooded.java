@@ -9,21 +9,14 @@ public class WarmBlooded extends Animal{
     public static boolean isIsEndothermic() {
         return isEndothermic;
     }
-    public static void setIsEndothermic(boolean isEndothermic) {
-        WarmBlooded.isEndothermic = isEndothermic;
-    }
 
-
-    public WarmBlooded(String name,  String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim) {
-        super(name, "WormBlooded", animalClass, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim);
+    public WarmBlooded(String name, String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim, String fat) {
+        super(name, "Warmblooded", animalClass, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim);
+        this.fat = fat;
     }
 
     public static boolean isHasStableTemp() {
         return hasStableTemp;
-    }
-
-    public static void setHasStableTemp(boolean hasStableTemp) {
-        WarmBlooded.hasStableTemp = hasStableTemp;
     }
 
     public String getFat() {
@@ -44,11 +37,11 @@ public class WarmBlooded extends Animal{
         System.out.println("Warm blooded" +" "+getName()+" has stabil metabolicrate");
     }
     public void regulateTemp() {
-        System.out.println("can regulate their temprutare");
+        System.out.println(getName()+ " is can regulate their temperature");
     }
 
     public void defenceFungi() {
-        System.out.println("they increase temperature and protect themselves against bacteria");
+        System.out.println(getName()+" increase temperature and protect themselves against bacteria");
     }
 
 }
