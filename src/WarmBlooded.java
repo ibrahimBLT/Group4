@@ -2,7 +2,17 @@ public class WarmBlooded extends Animal{
 
 
     static boolean hasStableTemp=true;
+
+    static boolean isEndothermic=true;
+
     private String fat;
+    public static boolean isIsEndothermic() {
+        return isEndothermic;
+    }
+    public static void setIsEndothermic(boolean isEndothermic) {
+        WarmBlooded.isEndothermic = isEndothermic;
+    }
+
 
     public WarmBlooded(String name,  String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim) {
         super(name, "WormBlooded", animalClass, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim);
@@ -32,6 +42,13 @@ public class WarmBlooded extends Animal{
 
     public void metabolicRate(){
         System.out.println("Warm blooded" +" "+getName()+" has stabil metabolicrate");
+    }
+    public void regulateTemp() {
+        System.out.println("can regulate their temprutare");
+    }
+
+    public void defenceFungi() {
+        System.out.println("they increase temperature and protect themselves against bacteria");
     }
 
 }
