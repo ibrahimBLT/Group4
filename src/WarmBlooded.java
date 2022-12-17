@@ -26,6 +26,13 @@ public class WarmBlooded extends Animal{
         this.fat = fat;
     }
 
+    public void getEnergy(){
+        System.out.println("Warm blooded" +" "+getName()+" is gets energy from their foods");
+    }
+
+    public void metabolicRate(){
+        System.out.println("Warm blooded" +" "+getName()+" has stabil metabolicrate");
+    }
 
 }
 /*
