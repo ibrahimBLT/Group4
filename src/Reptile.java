@@ -1,6 +1,4 @@
-public class Reptile {
-
-    public class Reptile extends Animal {
+public class Reptile extends Animal {
 
 
         private String tailSize;
@@ -81,6 +79,6 @@ Methods
 -changeHisColor()
      */
 
-    }
+
 
 }
