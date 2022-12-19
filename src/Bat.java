@@ -9,6 +9,7 @@ public class Bat extends Animal {
         System.out.println(getName() + " move fastly");
     }
 
+
     @Override
     public void makeSound() {
         System.out.println(getName() + " make ultrasonic sound that humans cannot hear.");
