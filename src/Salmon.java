@@ -36,6 +36,7 @@ public class Salmon extends Fish {
     public String toString() {
         return "Salmon{}";
     }
+    //
 }
 
 
