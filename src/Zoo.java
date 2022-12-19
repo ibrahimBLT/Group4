@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 public class Zoo {
 
+
     ArrayList<Mammal> mammals = new ArrayList<>();
     ArrayList<Reptile> reptiles = new ArrayList<>();
 
@@ -13,6 +14,10 @@ public class Zoo {
     public ArrayList<Reptile> addReptile(Reptile reptile){
         reptiles.add(reptile);
         return reptiles;
+    }
+    public int fourLegs(){
+        mammals.removeIf(p->p.getNumberOfLegs()==2);
+        return mammals.size();
     }
 
 

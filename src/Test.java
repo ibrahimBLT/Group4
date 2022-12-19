@@ -9,6 +9,9 @@ public class Test {
         Reptile reptile2 = new Reptile();
         reptile2.setName("Jack");
 
+        reptile1.setNumberOfLegs(4);
+        reptile2.setNumberOfLegs(4);
+
         Mammal mammal1 = new Mammal();
         mammal1.setName("Mark");
         Mammal mammal2 = new Mammal();
@@ -21,8 +24,20 @@ public class Test {
         zoo2.addMammal(mammal2);
         zoo2.addReptile(reptile2);
 
+        mammal2.setNumberOfLegs(2);
+        mammal1.setNumberOfLegs(4);
+
+        System.out.println(mammal1.getNumberOfLegs());
+
         System.out.println(zoo1);
 
         System.out.println(zoo2);
+
+        System.out.println(zoo2.fourLegs());
+        System.out.println(zoo2);
+
+
+
+
     }
 }
