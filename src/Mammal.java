@@ -1,15 +1,15 @@
-public class Mammal extends Animal {
+public class Mammal extends WarmBlooded {
 
     private String earShape;
     private String tailSize;
 
-
-    public Mammal(String name, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim, String earShape, String tailSize, String feedBaby, String giveBirth) {
-        super(name, "warmBlooded", "mammal", bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim);
+    public Mammal(){};
+    public Mammal(String name, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim, String fat, String earShape , String tailSize) {
+        super(name, "Mammal", bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim, fat);
         setEarShape(earShape);
         setTailSize(tailSize);
-
     }
+
 
     public String getEarShape() {
         return earShape;
@@ -34,7 +34,26 @@ public class Mammal extends Animal {
         System.out.println(getName() + " with egg or normal birth");
     }
 
-
+    public String toString() {
+        return "Mammal{" +
+                "name='" + getName() + '\'' +
+                ", species='" + "WarmBlooded" + '\'' +
+                ", animalClass='" + "Mammal" + '\'' +
+                ", bodyCovering='" + getBodyCovering() + '\'' +
+                ", color='" + getColor() + '\'' +
+                ", gender=" + getGender() +
+                ", age=" + getAge() +
+                ", numberOfLegs=" + getNumberOfLegs() +
+                ", size='" + getSize() + '\'' +
+                ", weight=" + getWeight() +
+                ", speed='" + getSpeed() + '\'' +
+                ", habitatArea='" + getHabitatArea() + '\'' +
+                ", fat='" + getFat() + '\'' +
+                ", hasStableTemp='" + hasStableTemp + '\'' +
+                ", ear shape ='" + getEarShape() + '\'' +
+                ", tail size='" + getTailSize() + '\'' +
+                '}';
+    }
 
 }
 /*

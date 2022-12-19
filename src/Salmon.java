@@ -1,42 +1,32 @@
 public class Salmon extends Fish {
 
-    public Salmon(String name, String color,
-                  char gender, int age, String size, double weight, String speed) {
-        super(name, color, gender, age, size, weight, speed);
-
-
+    public Salmon(String name, String animalClass, String bodyCovering, String color,
+                  char gender, int age, int numberOfLegs, String size, double weight,
+                  String speed, String habitatArea, boolean canFly, boolean canSwim, String fat, int fin) {
+        super(name, animalClass, bodyCovering, color, gender, age, numberOfLegs,
+                size, weight, speed, habitatArea, canFly, canSwim, fat, fin);
     }
 
-    @Override
     public void setHasTeeth(boolean hasTeeth) {
         hasTeeth=true;
     }
 
-    @Override
-    public void setHasBone(boolean hasBone) {
-        hasBone=true;
-    }
-
-    @Override
-    public void setNutritionType(String nutritionType) {
+      public void setNutritionType() {
         System.out.println(getName()+ " is carnivorous");
     }
 
-    @Override
-    public void setGiveBirth(String giveBirth) {
+
+    public void setGiveBirth() {
         System.out.println(getName()+ " breeds via external fertilization");
     }
 
-    @Override
-    public void setSwimSpeed(String swimSpeed) {
+
+    public void setSwimSpeed() {
         System.out.println(getName()+ " swims fast");
     }
 
-    @Override
-    public String toString() {
-        return "Salmon{}";
-    }
-    //
+
+
 }
 
 

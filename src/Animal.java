@@ -7,7 +7,7 @@ public class Animal {
         private double weight;
         private String speed, habitatArea;
         private boolean canFly, canSwim;
-
+        public Animal (){};
         public Animal(String name, String species, String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim) {
             setName(name);
             setSpecies(species);

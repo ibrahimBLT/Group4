@@ -7,10 +7,11 @@ public class WarmBlooded extends Animal{
 
     private String fat;
 
-
+    public WarmBlooded(){};
     public WarmBlooded(String name, String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim, String fat) {
         super(name, "Warmblooded", animalClass, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim);
         setFat(fat);
+
     }
     public static boolean isIsEndothermic() {
         return isEndothermic;
@@ -44,7 +45,27 @@ public class WarmBlooded extends Animal{
         System.out.println(getName()+" increase temperature and protect themselves against bacteria");
     }
 
-}
+        public String toString() {
+            return "WarmBlooded{" +
+                    "name='" + getName() + '\'' +
+                    ", species='" + "WarmBlooded" + '\'' +
+                    ", animalClass='" + getAnimalClass() + '\'' +
+                    ", bodyCovering='" + getBodyCovering() + '\'' +
+                    ", color='" + getColor() + '\'' +
+                    ", gender=" + getGender() +
+                    ", age=" + getAge() +
+                    ", numberOfLegs=" + getNumberOfLegs() +
+                    ", size='" + getSize() + '\'' +
+                    ", weight=" + getWeight() +
+                    ", speed='" + getSpeed() + '\'' +
+                    ", habitatArea='" + getHabitatArea() + '\'' +
+                    ", fat='" + fat + '\'' +
+                    ", hasStableTemp='" + hasStableTemp + '\'' +
+                    '}';
+        }
+    }
+
+
 /*
 2-WarmBlooded
 Attributes

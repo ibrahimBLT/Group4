@@ -1,10 +1,14 @@
 public class Chicken extends Bird {
 
-    public String typeOfGrow;
+    private String typeOfGrow;
 
-    public Chicken(String name, String species, String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim, String beakSize, String wingSize, String typeOfGrow) {
-        super(name, species, animalClass, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim, beakSize, wingSize);
-        setTypeOfGrow(typeOfGrow);}
+    public Chicken(String name, String bodyCovering, String color, char gender, int age, int numberOfLegs,
+                   String size, double weight, String speed, String habitatArea, boolean canFly,
+                   boolean canSwim, String fat, String beakSize, String wingSize, String typeOfGrow) {
+        super(name, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea,
+                canFly, canSwim, fat, beakSize, wingSize);
+        setTypeOfGrow(typeOfGrow);
+    }
 
     public String getTypeOfGrow() {
         return typeOfGrow;
@@ -22,11 +26,24 @@ public class Chicken extends Bird {
 
     @Override
     public String toString() {
-        return "Chicken{" +
-                "typeOfGrow='" + typeOfGrow + '\'' +
-                ", beakSize='" + beakSize + '\'' +
-                ", wingSize='" + wingSize + '\'' +
-                ", fat='" + fat + '\'' +
+        return "Mammal{" +
+                "name='" + getName() + '\'' +
+                ", species='" + "WarmBlooded" + '\'' +
+                ", animalClass='" + "Mammal" + '\'' +
+                ", bodyCovering='" + getBodyCovering() + '\'' +
+                ", color='" + getColor() + '\'' +
+                ", gender=" + getGender() +
+                ", age=" + getAge() +
+                ", numberOfLegs=" + getNumberOfLegs() +
+                ", size='" + getSize() + '\'' +
+                ", weight=" + getWeight() +
+                ", speed='" + getSpeed() + '\'' +
+                ", habitatArea='" + getHabitatArea() + '\'' +
+                ", fat='" + getFat() + '\'' +
+                ", hasStableTemp='" + hasStableTemp + '\'' +
+                ", beak size='" + getBeakSize() + '\'' +
+                ", wing size='" + getWingSize() + '\'' +
+                ", type of grow='" + getTypeOfGrow() + '\'' +
                 '}';
     }
 }

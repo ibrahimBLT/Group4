@@ -3,12 +3,11 @@ public class Bird extends WarmBlooded{
     public String beakSize;
     public String wingSize;
 
-    public Bird(String name, String species, String animalClass,
-                String bodyCovering, String color, char gender, int age, int numberOfLegs,
-                String size, double weight, String speed, String habitatArea, boolean canFly,
-                boolean canSwim, String beakSize, String wingSize) {
-        super(name, species, animalClass, bodyCovering, color, gender, age, numberOfLegs,
-                size, weight, speed, habitatArea, canFly, canSwim);
+    public Bird(String name, String bodyCovering, String color, char gender, int age,
+                int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly,
+                boolean canSwim, String fat, String beakSize, String wingSize) {
+        super(name, "Bird", bodyCovering, color, gender, age, numberOfLegs, size, weight, speed,
+                habitatArea, canFly, canSwim, fat);
         setBeakSize(beakSize);
         setWingSize(wingSize);
     }
@@ -42,9 +41,22 @@ public class Bird extends WarmBlooded{
     @Override
     public String toString() {
         return "Bird{" +
-                "beakSize='" + beakSize + '\'' +
-                ", wingSize='" + wingSize + '\'' +
-                ", fat='" + fat + '\'' +
+                "name='" + getName() + '\'' +
+                ", species='" + "WarmBlooded" + '\'' +
+                ", animalClass='" + "Mammal" + '\'' +
+                ", bodyCovering='" + getBodyCovering() + '\'' +
+                ", color='" + getColor() + '\'' +
+                ", gender=" + getGender() +
+                ", age=" + getAge() +
+                ", numberOfLegs=" + getNumberOfLegs() +
+                ", size='" + getSize() + '\'' +
+                ", weight=" + getWeight() +
+                ", speed='" + getSpeed() + '\'' +
+                ", habitatArea='" + getHabitatArea() + '\'' +
+                ", fat='" + getFat() + '\'' +
+                ", hasStableTemp='" + hasStableTemp + '\'' +
+                ", beak size='" + getBeakSize() + '\'' +
+                ", wing size='" + getWingSize() + '\'' +
                 '}';
     }
 }

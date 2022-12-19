@@ -3,8 +3,16 @@ public class Reptile extends ColdBlooded {
 
         private String tailSize;
 
+    public Reptile(){};
+    public Reptile(String name, String bodyCovering, String color, char gender,
+                   int age, int numberOfLegs, String size, double weight, String speed, String habitatArea,
+                   boolean canFly, boolean canSwim, String fat, String tailSize) {
+        super(name, "Reptile", bodyCovering, color, gender, age, numberOfLegs, size, weight, speed,
+                habitatArea, canFly, canSwim, fat);
+      setTailSize(tailSize);
+    }
 
-        public String getTailSize() {
+    public String getTailSize() {
             return tailSize;
         }
 
@@ -15,10 +23,6 @@ public class Reptile extends ColdBlooded {
 
 
 
-        public Reptile(String name, String species, String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim) {
-            super(name, species, animalClass, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim);
-            setTailSize(tailSize);
-        }
 
 
         //run method
@@ -36,7 +40,21 @@ public class Reptile extends ColdBlooded {
     @Override
     public String toString() {
         return "Reptile{" +
-                "tailSize='" + tailSize + '\'' +
+                "name='" + getName() + '\'' +
+                ", species='" + "Cold Blooded" + '\'' +
+                ", animalClass='" + "Reptile" + '\'' +
+                ", bodyCovering='" + getBodyCovering() + '\'' +
+                ", color='" + getColor() + '\'' +
+                ", gender=" + getGender() +
+                ", age=" + getAge() +
+                ", numberOfLegs=" + getNumberOfLegs() +
+                ", size='" + getSize() + '\'' +
+                ", weight=" + getWeight() +
+                ", speed='" + getSpeed() + '\'' +
+                ", habitatArea='" + getHabitatArea() + '\'' +
+                ", fat='" + getFat() + '\'' +
+                ", hasStableTemp='" + hasStableTemp + '\'' +
+                ", tail size='" + getTailSize() + '\'' +
                 '}';
     }
 

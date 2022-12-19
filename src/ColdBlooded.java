@@ -2,7 +2,8 @@ public class ColdBlooded extends Animal {
     static boolean hasStableTemp= false;
     private String fat;
 
-    public ColdBlooded(String name, String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim) {
+    public ColdBlooded(){};
+    public ColdBlooded(String name, String animalClass, String bodyCovering, String color, char gender, int age, int numberOfLegs, String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim, String fat) {
         super(name, "Cold Blooded", animalClass, bodyCovering, color, gender, age, numberOfLegs, size, weight, speed, habitatArea, canFly, canSwim);
         setFat(fat);
     }
