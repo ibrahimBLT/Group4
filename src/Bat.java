@@ -1,5 +1,6 @@
 public class Bat extends Mammal {
 
+    public Bat(){}
     public Bat(String name, String bodyCovering, String color, char gender, int age, int numberOfLegs,
                String size, double weight, String speed, String habitatArea, boolean canFly, boolean canSwim,
                String fat, String earShape, String tailSize) {

@@ -1,5 +1,6 @@
 public class Salmon extends Fish {
 
+    public Salmon(){};
     public Salmon(String name, String animalClass, String bodyCovering, String color,
                   char gender, int age, int numberOfLegs, String size, double weight,
                   String speed, String habitatArea, boolean canFly, boolean canSwim, String fat, int fin) {
