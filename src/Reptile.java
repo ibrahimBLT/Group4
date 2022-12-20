@@ -22,9 +22,6 @@ public class Reptile extends ColdBlooded {
         }
 
 
-
-
-
         //run method
         public void run(){
             System.out.println(getName()+" is running fast");

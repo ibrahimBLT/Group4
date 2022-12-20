@@ -1,5 +1,6 @@
 public class Chicken extends Bird {
 
+    public Chicken(){};
     private String typeOfGrow;
 
     public Chicken(String name, String bodyCovering, String color, char gender, int age, int numberOfLegs,

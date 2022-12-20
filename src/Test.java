@@ -1,5 +1,35 @@
 public class Test {
     public static void main(String[] args) {
+
+        Iguana iguana1 = new Iguana();
+        Iguana iguana2 = new Iguana();
+        Iguana iguana3 = new Iguana();
+
+        Lizard lizard1 = new Lizard();
+        Lizard lizard2 = new Lizard();
+        Lizard lizard3 = new Lizard();
+
+        Salmon salmon1 = new Salmon();
+        Salmon salmon2 = new Salmon();
+        Salmon salmon3 = new Salmon();
+
+        GoldFish goldFish1 = new GoldFish();
+        GoldFish goldFish2 = new GoldFish();
+        GoldFish goldFish3 = new GoldFish();
+
+        Eagle eagle1 = new Eagle();
+        Eagle eagle2 = new Eagle();
+        Eagle eagle3 = new Eagle();
+
+        Chicken chicken1 = new Chicken();
+        Chicken chicken2 = new Chicken();
+        Chicken chicken3 = new Chicken();
+
+        Bat bat1= new Bat();
+        Bat bat2= new Bat();
+        Bat bat3= new Bat();
+
+
         Zoo zoo1 = new Zoo();
         Zoo zoo2 = new Zoo();
 
